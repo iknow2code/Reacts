@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  top: 0.7rem;
+  top: 3em;
   position: relative;
   margin: auto;
   background-color: rgb(220, 232, 242);
@@ -31,6 +31,14 @@ span {
 }
 .note{
     float:right;
+    position: relative;
+    left:5%;
+    top: -9.1rem;
+}
+.note img{
+    width: 455px;
+    height: 590px;
+    border-radius: 20px;
 }
 label {
   top: 10px;
@@ -42,7 +50,7 @@ label {
 select {
   top: 10px;
   margin: auto;
-  width: 13rem;
+  width: 15.8rem;
   left: 30px;
   position: relative;
   height: 40px;
@@ -51,15 +59,15 @@ select {
 input {
   top: 8px;
   margin: auto;
-  width: 12.8rem;
+  width: 15.8rem;
   left: 30px;
   position: relative;
   padding: 15px;
-  height: 35px;
+  height: 40px;
 }
 .btn{
   position: relative;
-  left: 20%;
+  left: 35%;
   width: 150px;
   height: 40px;
   background-color: rgb(23, 23, 154);
@@ -74,4 +82,20 @@ button:hover {
   color: black;
   font-weight: bolder;
   border: 1px solid blue;
+}
+
+@media screen and (max-width: 1180px) {
+  .note{
+    display: none;
+  }
+  .card{
+    width: 70%;
+  }
+  .form-group select{
+    width: 100%;
+  }
+  .form-group input{
+    width: 100%;
+  }
+
 }

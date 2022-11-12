@@ -1,5 +1,6 @@
 import React from 'react'
 import './form.css';
+import side_pic from "./../../assets/images/clip-971.png";
 //rfce
 function form() {
     return (
@@ -69,6 +70,7 @@ function form() {
                     </form>
                 </div>
                 <div className="note">
+               <img src={side_pic} alt="" srcset="" />
                 </div>
             </div>
         </div>
