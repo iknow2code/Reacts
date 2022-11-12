@@ -1,67 +1,77 @@
 import React from 'react'
-import './form.css'
+import './form.css';
 //rfce
 function form() {
     return (
-        <div className="card">
-            <div className="row">
-                <form>
+        <div className="container">
+            <div className="card">
+                <div className="form-card">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="fiscal_year" className="form-label"> Select Fiscal  year of the receipt.
+                                <span className="label-nepali">* </span>
+                            </label>
+                            <div className="input-group">
+                                <select name="fiscal_year" id="fiscal_year">
+                                    <option disabled selected>-Select-</option>
+                                    <option value="7980">79/80</option>
+                                    <option value="7879">78/79</option>
+                                    <option value="7778">77/78</option>
+                                </select>
 
-                    <label htmlFor="fyear" className="form-label"> Select Fiscal  year of the receipt.
-                        <span className="label-nepali">* </span>
-                    </label>
-                    <div className="input-group required">
-                        <select name="fyear" id="year">
-                            <option value="79/80" selected>79/80</option>
-                            <option value="78/79">78/79</option>
-                        </select>
-
-                    </div>{ /**/}
-
-
-                    <label htmlFor="province" className="form-label"> Select Province.
-                        <span className="label-nepali">  * </span>
-                    </label>
-                    <div className="input-group required">
-                        <select name="province" id="year">
-                            <option value="Province 1" selected>Province 1</option>
-                            <option value="Bagmati">Bagmati</option>
-                            <option value="Madhesh"> Madhesh</option>
-                        </select>
-
-                    </div>{ /**/}
-
-                    <label htmlFor="district" className="form-label"> Select District.
-                        <span className="label-nepali">  * </span>
-                    </label>
-                    <div className="input-group required">
-                        <select name="district" id="year">
-                            <option value="Kathmandu" selected>Kathmandu</option>
-                            <option value="Sarlahi">Sarlahi</option>
-                            <option value="Bhaktapur"> Bhaktapur</option>
-                            <option value="Lalitpur">Lalitpur</option>
-                        </select>
-
-                    </div>{ /**/}
-
-                    <label htmlFor="chitno" className="form-label"> Enter Chit No.
-                        <span className="label-nepali"> * </span>
-                    </label>
-                    <div className="input-group required">
-                        <input type="text" name="chitno" id="chitno"/>
-                      
-
-                    </div>{ /**/}
+                            </div>{ /**/}
 
 
-                    <div className="input-group">
-                        <button className="btn btn-primary" type="submit" > Check</button>
-                    </div>
-                </form>
+                            <label htmlFor="province_code" className="form-label"> Select Province.
+                                <span className="label-nepali">  * </span>
+                            </label>
+                            <div className="input-group">
+                                <select name="province_code" id="province_code"> 
+                                    <option  disabled selected>-Select-</option>
+                                    <option value="000" label="Kathmandu Valley">Kathmandu Valley</option>
+                                    <option value="001" label="Province 1">Province 1</option>
+                                    <option value="002" label="Madhesh Province">Madhesh Province</option>
+                                    <option value="003" label="Bagmati Province">Bagmati Province</option>
+                                    <option value="004" label="Gandaki Province">Gandaki Province</option>
+                                    <option value="005" label="Lumbini Province">Lumbini Province</option>
+                                    <option value="006" label="Karnali Province">Karnali Province</option>
+                                    <option value="007" label="Sudurpaschim Province">Sudurpaschim Province</option>
+
+                                </select>
+
+                            </div>{ /**/}
+
+                            <label htmlFor="district_code" className="form-label"> Select District.
+                                <span className="label-nepali">  * </span>
+                            </label>
+                            <div className="input-group">
+                                <select name="district_code" id="district_code">
+                                <option  disabled selected>-Select-</option>
+                                    <option value="000" selected>Kathmandu</option>
+                                    <option value="000"> Bhaktapur</option>
+                                    <option value="000">Lalitpur</option>
+                                </select>
+
+                            </div>{ /**/}
+
+                            <label htmlFor="chitno" className="form-label"> Enter Chit No.
+                                <span className="label-nepali"> * </span>
+                            </label>
+                            <div className="input-group">
+                              <input type="text" id="chitno" className="input-group" placeholder="Enter the Chit No." required/>
+                            </div>{ /**/}
+
+
+                            <div className="input-group">
+                                <button className="btn" type="submit" > Check</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div className="note">
+                </div>
             </div>
         </div>
-
-
 
     )
 }

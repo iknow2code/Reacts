@@ -1,63 +1,77 @@
-.card{
-    display:flex;
-    top:0.7rem;
-    position:relative;
-    margin:auto;
-    background-color:aliceblue;
-    border-radius:25px;
-    height:28rem;
-    width:65%;   
+.card {
+  display: flex;
+  top: 0.7rem;
+  position: relative;
+  margin: auto;
+  background-color: rgb(220, 232, 242);
+  border-radius: 25px;
+  height: 28rem;
+  width: 65%;
 }
-.row{
-    margin:20px;
-    padding:10px;
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
 }
-span{
-    color:red;
+span {
+  color: red;
 }
-.input-group{
-    padding:10px;
- 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem;
+  margin: 4px;
+  width: 100%;
+  float: left;
+  position: relative;
 }
-label{
-    position:relative;
-    left:25px;
-    padding:5px;
-    font-size: 0.75em;
+.note{
+    float:right;
 }
-select{
-    margin:auto;
-    width:300px;
-    left:30px;
-    position:relative;
-    height:40px;
+label {
+  top: 10px;
+  position: relative;
+  left: 25px;
+  padding: 5px;
+  font-size: 0.79rem;
 }
-input{
- 
-        margin:auto;
-        width:295px;
-        left:30px;
-        position:relative;
-        height:35px;
-        
-   
+select {
+  top: 10px;
+  margin: auto;
+  width: 13rem;
+  left: 30px;
+  position: relative;
+  height: 40px;
+  padding: 8px;
 }
-button{
-    position:relative;
-    left:100px;
-    width:150px;
-    height:40px;
-    background-color:rgb(34, 34, 198);
-    color:white;
-    font-weight:bold;
-    
-    border:none;
-    border-radius: 5px;
-    
+input {
+  top: 8px;
+  margin: auto;
+  width: 12.8rem;
+  left: 30px;
+  position: relative;
+  padding: 15px;
+  height: 35px;
 }
-button:hover{
-    background-color:bisque;
-    color:black;
-    font-weight: bolder;
-    border:1px solid blue;
+.btn{
+  position: relative;
+  left: 20%;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(23, 23, 154);
+  color: white;
+  font-weight: bold;
+  top: 25px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: bisque;
+  color: black;
+  font-weight: bolder;
+  border: 1px solid blue;
 }
