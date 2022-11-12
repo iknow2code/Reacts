@@ -1,0 +1,49 @@
+$text-size: 1.1rem;
+$font-family: 'Calibri', sans-serif;
+
+body{
+    background-color: #2a2178;
+}
+header{
+    font-family: $font-family;
+    margin: 5px;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    font-size: $text-size;
+    
+}
+.logo-img{
+    width: 110px;
+    height: 100px;  
+}
+h1{
+    font-size: 1.3rem;
+    color: rgb(205, 210, 210);
+    text-transform: uppercase;
+    text-decoration: solid;
+    font-weight: 800;
+    margin: 0;
+   
+}
+h1:hover{
+    color: #9494bf;
+    
+}
+b{
+    color:rgb(134, 193, 241);
+}
+@media screen and (max-width: 768px){
+    .logo-img{
+        width: 90px;
+        height: 80px;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    header{
+        font-size: 0.9rem;
+    }
+}
+
+    
